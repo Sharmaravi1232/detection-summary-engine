@@ -4,25 +4,25 @@ Detection Summary Engine is a streamlined video analysis tool that uses pretrain
 Key Features
 Uses pretrained models (YOLOv5, Faster R-CNN)
 
-Processes every 5th frame of a video (15–20 seconds duration)
+. Processes every 5th frame of a video (15–20 seconds duration)
 
-Outputs per-frame JSON data including:
+. Outputs per-frame JSON data including:
 
-Detected class labels
+. Detected class labels
 
-Bounding box coordinates
+. Bounding box coordinates
 
-Confidence scores
+. Confidence scores
 
-Computes total object counts per class
+. Computes total object counts per class
 
-Identifies the frame with the highest class diversity
+. Identifies the frame with the highest class diversity
 
-Generates a bar chart of object frequency
+. Generates a bar chart of object frequency
 
-(Optional) Saves annotated frames or compiles a video with visual overlays
+. (Optional) Saves annotated frames or compiles a video with visual overlays
 
-detection-summary-engine/
+. detection-summary-engine/
 ├── models/            # Model loading and config
 ├── utils/             # Helper functions
 ├── outputs/           # Annotated frames, charts, compiled video
@@ -31,48 +31,48 @@ detection-summary-engine/
 ├── requirements.txt   # Python dependencies
 └── README.md
 
-pip install -r requirements.txt
-Requirements
-torch, torchvision
+. pip install -r requirements.txt
+. Requirements
+. torch, torchvision
 
-opencv-python
+. opencv-python
 
-matplotlib
+. matplotlib
 
-numpy, pandas
-python main.py --video ./video_input/sample.mp4 --model yolo
+. numpy, pandas
+. python main.py --video ./video_input/sample.mp4 --model yolo
 
-ptional arguments:
+. ptional arguments:
 
---save-frames — Save annotated frames
+. save-frames — Save annotated frames
 
---save-video — Save output video with detections
+. save-video — Save output video with detections
 
---frame-interval — Frame skip interval (default: 5)
+. frame-interval — Frame skip interval (default: 5)
 
-Output
-JSON metadata per frame
+. Output
+. JSON metadata per frame
 
-Object frequency visualization (object_frequency.png)
+. Object frequency visualization (object_frequency.png)
 
-Frame index with maximum class diversity
+. Frame index with maximum class diversity
 
-Optional: annotated images or compiled output video
+. Optional: annotated images or compiled output video
 
-Supported Models
-YOLOv5 (via Ultralytics PyTorch Hub)
+. Supported Models
+. YOLOv5 (via Ultralytics PyTorch Hub)
 
-Faster R-CNN (via torchvision.models.detection)
+. Faster R-CNN (via torchvision.models.detection)
 
-Custom model integration is supported with minimal modifications.
-Future Enhancements
-Live webcam feed support
+. Custom model integration is supported with minimal modifications.
+. Future Enhancements
+. Live webcam feed support
 
-Lightweight model integration (e.g., YOLOv8-nano, MobileNet SSD)
+. Lightweight model integration (e.g., YOLOv8-nano, MobileNet SSD)
 
-Exportable summary reports (PDF/HTML)
+. Exportable summary reports (PDF/HTML)
 
-Optimized real-time inference
+. Optimized real-time inference
 
 
 
